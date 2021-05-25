@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dashboard</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="libs/fontawesome/all.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg" href="img/dashboard.svg">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <img src="img/dashboard.svg" alt="logo">
+                </a>
+                <div class="menu">
+                    <div class="text-menu">
+                        Choose a city
+                    </div>
+                    <button class="menu-button" id="open">
+                        <img src="img/bars.svg" alt="vector">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content-wrapper__main">
+            <nav class="navbar">
+                <div class="user">
+                    <div class="user-logo">
+                        <div class="user-logo_text">
+                            jd
+                        </div>
+                    </div>
+                    <div class="user-information">
+                        <div class="user-name">
+                            John Doe
+                        </div>
+                        <div class="user-status">
+                            Premium Nomad
+                        </div>
+                    </div>
+                </div>
+                <div class="list-navbar">
+                    <ul class="list">
+                        <li class="list-triger__active">
+                            <a class="triger-active" href="main.html">
+                                <img class="icon-triger" src="img/inbox.svg" alt="vector">Bookings
+                            </a>
+                        </li>
+                        <li>
+                            <a class="triger" href="#">
+                                <img class="icon-triger" src="img/bed.svg" alt="vector">
+                                Refer and Earn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="user.html">
+                                <img class="icon-triger" src="img/user-cog.svg" alt="vector">
+                                Account Settings
+                            </a>
+                        </li>
+                        <div class="text-navbar">Support</div>
+                        <li>
+                            <a class="triger" href="#">
+                                <img class="icon-triger" src="img/life-ring.svg" alt="vector">
+                                Contact us
+                            </a>
+                        </li>
+                        <li>
+                            <a class="triger" href="#">
+                                <img class="icon-triger" src="img/bed.svg" alt="vector">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-navbar">
+                    <div class="switch">
+                        <input type="checkbox" id="switch"/>
+                        <label for="switch">Toggle</label>
+                    </div>
+                    <div class="switch-text">
+                        Sign out
+                    </div>
+                </div>
+            </nav>
+            <section class="content">
+                <div class="heading-content">
+                    <h1>Bookings</h1>
+                    <h3>Your current upcoming stays</h3>
+                    <p>Please update with the properity if your travel plans should change or if you wish
+                    to make any changes to your stay.</p>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Learn more about our premium subscription</a>
+                </div>
+                <div class="view-block__wrapper">
+                    <div class="view-img">
+                        <img src="https://img5.goodfon.ru/original/1920x1080/a/aa/lampa-okno-shtora.jpg" alt="img">
+                    </div>
+                    <div class="view-content-left">
+                        <div class="view-content__heading content-wrappers">
+                            <h4>The Green View</h4>
+                            <ul class="view-list">
+                                <li class="list-item">
+                                    <i class="fas fa-check-circle"></i>Booking request recieved
+                                </li>
+                                <li class="color">
+                                    <i class="fas fa-clock"></i>Awaiting confirmation from Hotel
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="view-content__center content-wrappers">
+                            <h4>Superior Premium</h4>
+                            <div class="info-statistic">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th><i class="far fa-calendar-check"></i>Check-in</th>
+                                            <th><i class="fas fa-asterisk"></i>Reference</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>July 9th, 2018</td>
+                                            <td>#UC311K</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="view-content__footer content-wrappers">
+                            <ul class="view-list__footer">
+                                <li>
+                                    <a class="star" href="#">
+                                        <i class="fas fa-star"></i>
+                                        Rate your stay
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-telegram-plane"></i>
+                                        Email the property
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+	<!-- Подключение скриптов -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- Конец подключения скриптов -->
+</body>
+</html>

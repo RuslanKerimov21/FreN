@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>dashboard</title>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="libs/fontawesome/all.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/svg" href="img/dashboard.svg">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="#" class="logo">
+                    <img src="img/dashboard.svg" alt="logo">
+                </a>
+                <div class="menu">
+                    <div class="text-menu">
+                        Choose a city
+                    </div>
+                    <button class="menu-button" id="open">
+                        <img src="img/bars.svg" alt="vector">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="content-wrapper__main">
+            <nav class="navbar">
+                <div class="user">
+                    <div class="user-logo">
+                        <div class="user-logo_text">
+                            jd
+                        </div>
+                    </div>
+                    <div class="user-information">
+                        <div class="user-name">
+                            John Doe
+                        </div>
+                        <div class="user-status">
+                            Premium Nomad
+                        </div>
+                    </div>
+                </div>
+                <div class="list-navbar">
+                   <ul class="list">
+                        <li class="list-triger__active">
+                            <a class="triger-active" href="main.html">
+                                <img class="icon-triger" src="img/inbox.svg" alt="vector">Bookings
+                            </a>
+                        </li>
+                        <li>
+                            <a class="triger" href="#">
+                                <img class="icon-triger" src="img/bed.svg" alt="vector">
+                                Refer and Earn
+                            </a>
+                        </li>
+                        <li>
+                            <a href="user.html">
+                                <img class="icon-triger" src="img/user-cog.svg" alt="vector">
+                                Account Settings
+                            </a>
+                        </li>
+                        <div class="text-navbar">Support</div>
+                        <li>
+                            <a class="triger" href="#">
+                                <img class="icon-triger" src="img/life-ring.svg" alt="vector">
+                                Contact us
+                            </a>
+                        </li>
+                        <li>
+                            <a class="triger" href="#">
+                                <img class="icon-triger" src="img/bed.svg" alt="vector">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-navbar">
+                    <div class="switch">
+                        <input type="checkbox" id="switch"/>
+                        <label for="switch">Toggle</label>
+                    </div>
+                    <div class="switch-text">
+                        Sign out
+                    </div>
+                </div>
+            </nav>
+            <section class="content">
+                <div class="heading-content">
+                    <h1>Account</h1>
+                    <h3>Review and update your account details</h3>
+                    <p>Please make sure these details are up to date as they’ll be used for your bookings, 
+                    and communications with the hotels.</p>
+                    <a href="#"><i class="fas fa-chevron-right"></i> Learn more about our premium subscription</a>
+                </div>
+                <div class="form-user__wrapper">
+                    <div class="form-user__heading">
+                        <div class="user-icon">
+                            <img src="img/user-edit.svg" alt="icon">
+                        </div>
+                        <div class="user-information">
+                            <div class="user-name">
+                                John Doe
+                            </div>
+                            <div class="user-description">
+                                Please make sure these details are up to date as they’ll be used for your 
+                                bookings, and communications with the hotels.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-user">
+                        <form action="#" method="POST">
+                            <div class="form-group__user">
+                                <div class="form-item">
+                                    <div class="heading-form__item">
+                                        Your Name
+                                    </div>
+                                    <input type="text" name="Name" placeholder="John Doe">
+                                </div>
+                                <div class="form-item">
+                                    <div class="heading-form__item">
+                                       Email adress
+                                    </div>
+                                    <input type="text" name="Name" placeholder="john.doe@domain.tld">
+                                </div>
+                            </div>
+                            <div class="form-group__user">
+                                <div class="form-item select-item">
+                                    <div class="heading-form__item">
+                                        Country
+                                    </div>
+                                    <input type="text" name="Name" placeholder="Thailand">
+                                </div>
+                                <div class="form-item">
+                                    <div class="heading-form__item">
+                                        Phone
+                                    </div>
+                                    <div class="input">
+                                        <div class="flag">
+                                            <div class="selected-flag">
+                                                <div class="init-flag hr"></div>
+                                                <div class="text">+66</div>
+                                            </div>
+                                            <ul class="country-list">
+
+                                            </ul>
+                                        </div>
+                                        <input type="tel" name="tel" placeholder="(0) 053 555 555" class="callbackwayup-wrapper__input phone" pattern="^([\+]+)*[0-9\x20\x28\x29\-]{11,20}$" required="" autocomplete="off">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group__user">
+                                <div class="form-item">
+                                    <div class="heading-form__item">
+                                        Current Password
+                                        <a href="#">Forgot?</a>
+                                    </div>
+                                    <input type="text" name="current-pass" placeholder="******">
+                                </div>
+                                <div class="form-item">
+                                    <div class="heading-form__item">
+                                        New Password
+                                    </div>
+                                    <input type="text" name="new-pass" placeholder="New password">
+                                </div>
+                            </div>
+                            <div class="footer-form__user">
+                                <div class="footer-text__form">
+                                    Your data will be <a href="#">handled with care</a>
+                                </div>
+                                <button class="footer-form__button" type="submit">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+	<!-- Подключение скриптов -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- Конец подключения скриптов -->
+</body>
+</html>
